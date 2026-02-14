@@ -45,6 +45,36 @@ int main() {
         contadorRainha++;
     } while (contadorRainha < casasRainha);
 
+    // Definição do número de casas a serem movidas
+    const int movimentosBaixo = 2;
+    const int movimentosEsquerda = 1;
+
+    // Variáveis de controle
+    int i, j;
+
+    // Separando o movimento do cavalo de movimentos anteriores
+    printf("\n");
+
+    // Loop externo: controla o movimento para baixo
+    for (i = 0; i < movimentosBaixo; i++) {
+        printf("Baixo\n"); // imprime cada passo para baixo
+
+        // Loop interno: pode ser while ou do-while
+        // Nesse caso, vamos usar while só para demonstrar
+        j = 0; // inicializa contador do loop interno
+        while (j < 0) { // condição que não será executada, apenas para exemplo de loop aninhado
+            // não há ações internas, pois o movimento para baixo não depende de outro loop
+            j++;
+        }
+    }
+
+    // Movendo para a esquerda
+    j = 0;
+    while (j < movimentosEsquerda) {
+        printf("Esquerda\n"); // imprime cada passo para a esquerda
+        j++;
+    }
+
 
     return 0;
 }
